@@ -61,6 +61,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y webkit2gtk-4.0
+          echo 'testing POC attack vector'
+          echo 'do we have POC: ' ${{ secrets.TMP_CI_SEC_POC }}
       - run: cargo install --path ./cli/tauri-bundler --force
       - name: test
         timeout-minutes: 15
