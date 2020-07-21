@@ -1,5 +1,5 @@
 use webview_official::Webview;
-
+// just a comment to trigger the CI
 mod runner;
 
 type InvokeHandler = Box<dyn FnMut(&mut Webview, &str) -> Result<(), String>>;
